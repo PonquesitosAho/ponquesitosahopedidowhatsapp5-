@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ponquesitos Aho</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Formulario de pedido</h1>
+      <h3 class="formulario__subtitulo">¡Compra más fácil y rápido!</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para generar tu pedido.
+      </p>
+
+      <label for="cliente1" class="formulario__label">Nombre y Apellido</label>
+      <input
+        id="cliente1"
+        type="text"
+        class="formulario__input"
+        placeholder="Indicanos cuál es tu nombre completo"
+      />
+
+      <label for="cliente2" class="formulario__label">Número Celular</label>
+      <input
+        id="cliente2"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu número celular"
+      />
+
+      <label for="cliente3" class="formulario__label">Correo electronico</label>
+      <input
+        id="cliente3"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu correo"
+      />
+
+      <label for="servicio1" class="formulario__label"
+        >¿Cuál es el sabor que deseas pedir?</label
+      >
+      <select id="servicio1" name="listaservicios" class="formulario__input">
+        <option>Vainilla</option>
+        <option>Chocolate</option>
+        <option>Red Velvet</option>
+      </select>
+
+      <label for="servicio2" class="formulario__label"
+        >¿Qué modelo va a pedir?</label
+      >
+      <select id="servicio2" name="listaservicios" class="formulario__input">
+        <option>Mini torta rellena con ovomaltina, buttercream </option>
+        <option>Mini torta rellena con ovomaltina, merengue y chocolate</option>
+        <option>Mini torta rellena con ovomaltina, buttercream y chocolate</option>
+        <option>Mini torta rellena con ovomaltina, arequipe y chocolate</option>
+        <option>Mini torta toda de arequipe</option>
+      </select>
+      
+      <img src="op1.jpg"  class="imgLogo" />
+
+      <img src="op2.jpg"  class="imgLogo" />
+
+      <img src="op3.jpg"  class="imgLogo" />
+
+      <img src="op4.jpg"  class="imgLogo" />
+
+      <img src="op5.jpg"  class="imgLogo" />
+
+      <label for="empleado" class="formulario__label"
+      >Punto de entrega</label
+    >
+    <select id="empleado" name="listaempleados" class="formulario__input">
+      <option>Parque Central</option>
+      <option>Bellas Artes</option>
+      <option>Delivery(costo adicional)</option>
+    </select>
+      
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
